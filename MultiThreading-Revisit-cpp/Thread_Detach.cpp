@@ -24,6 +24,7 @@ void thFunction(const int& num01, const int& num02)
 	finish = true;
 }
 
+#if 0
 
 int main()
 {
@@ -32,7 +33,7 @@ int main()
 
 	thread th(thFunction, a, b);
 	th.detach();
-	
+
 	// so now no guarantee of execution of worker thread with detach call...
 	// so than the question is how to make sure that you will get notified properly inside the main
 	// aboiut the worker thread completion...
@@ -50,3 +51,5 @@ int main()
 	cout << "Finished the Execution...\n";
 	return 0;
 }
+
+#endif // 0
