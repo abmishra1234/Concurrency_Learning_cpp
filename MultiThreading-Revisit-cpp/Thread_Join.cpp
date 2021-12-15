@@ -8,6 +8,11 @@ int sum = 0;
 
 void thSumFunction(const int& num01, const int& num02)
 {
+	// so any thing you will update here 
+	// it would be shared back to main thread by two ways
+	// 1. shared varible
+	// 2. Direct messaging the Main thread
+	// So this approach is just shared the approach for shared variable...
 	sum = (num01+num02);
 }
 
