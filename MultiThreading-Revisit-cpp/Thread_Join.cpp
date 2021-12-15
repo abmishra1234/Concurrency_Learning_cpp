@@ -18,7 +18,7 @@ void thSumFunction(const int& num01, const int& num02)
 	mul = (num01 * num02);
 }
 
-
+#if 0
 int main()
 {
 	cout << "Welcome to the MT with CPP class in dec 2021\n";
@@ -32,7 +32,7 @@ int main()
 		This is not useful in real thime thread scenario...
 		It is just for join understandiuing...
 	*/
-	
+
 	th.join();
 
 	cout << "So output value : sum = " << sum << "\n";
@@ -40,3 +40,4 @@ int main()
 
 	cout << "exiting from main\n";
 }
+#endif // 0
