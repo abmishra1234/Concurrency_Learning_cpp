@@ -21,6 +21,7 @@ namespace MyLockGuard
 
 using namespace MyLockGuard;
 
+#if 0
 int main()
 {
 	std::thread th1(AddToList, 4);
@@ -37,3 +38,4 @@ int main()
 	
 	cout << "\nExiting from main... th_id = " << std::this_thread::get_id() << "\n";
 }
+#endif // 0
